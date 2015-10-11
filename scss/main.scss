@@ -1,0 +1,17 @@
+//BASE
+@import "base/reset";
+@import "base/config";
+@import "base/typography";
+@import "base/base";
+
+//COMPONENTS
+@import "components/icons";
+@import "components/buttons";
+@import "components/searchbar";
+@import "components/shoppingcart";
+
+
+//LAYOUT
+@import "layout/header";
+@import "layout/notes";
+@import "layout/footer";

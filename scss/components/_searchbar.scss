@@ -1,0 +1,20 @@
+.searchbar {
+  display: flex;
+  box-sizing: border-box;
+  align-content: flex-end;
+  height: 1.75em;
+  max-width: 20em;
+  margin-right: .5em;
+
+  .q-search {
+    box-sizing: border-box;
+    height: 100%;
+    width: 15%;
+  }
+
+  #search {
+    box-sizing: border-box;
+    height: 100%;
+    width: 80%;
+  }
+}

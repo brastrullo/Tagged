@@ -1,0 +1,37 @@
+<article>
+  <div class="addNote">
+    <input id="noteInput" type="text" placeholder="Add New Note..." ng-model="text" onkeypress="pressedEnter(event)">
+    <span class="clickable" id="newNoteSubmit" ng-click="main.newNote(text)"><img src="img/addnote.png"></span>
+  </div>
+  <ul class="noteLst">
+  <span>Notes: {{main.lastId}}</span>
+
+    <li class="note" ng-class="{'selected' : note.id == main.select.active}" ng-repeat="note in main.notes | filter: query">
+
+      <div class="noteBody" ng-hide="note.id === main.edit.note">
+        <span class="noteTitle" ng-bind="note.title"></span>
+        <p class="noteContent truncate clickable" ng-click="main.selectNote(note.id)">{{note.content | limitTo: truncate}}...</p>
+      </div>
+
+      <div class="showMenu" ng-if="main.select.active === note.id">
+        <span class="editNote clickable" ng-if="note.id !== main.edit.note" ng-click="main.editMode(note.id)"><img src="img/edit.png" alt="Edit-Note Icon" title="Edit"></span>
+
+        <div class="editMode" ng-show="note.id === main.edit.note">
+          <div>
+            <input id="editTitle" type="text" ng-model="note.title" ng-model-options="{getterSetter:true}"/>
+            <input id="editContent" type="text" ng-model="note.content"  ng-model-options="{getterSetter:true}"/>
+          </div>
+          <span class="saveNote clickable" ng-click="main.saveNote(note.id, note.title, note.content)"><img src="img/checkmark.png" alt="Edit-Note Icon" title="Edit"></span>
+        </div>
+
+        <div class="deleteMenu" ng-if="note.id === main.edit.note">
+          <span class="deleteNote clickable" ng-if="!main.deleteMode" ng-click="main.deleteMode = true"><img src="img/delete.png" alt="Delete-Note Icon" title="Delete"></span>
+          <span class="confirmDelete clickable" ng-if="main.deleteMode" ng-click="main.deleteNote(note.id)"><img src="img/trashcan.png" alt="Confirm-Delete Icon" title="Confirm Delete"></span>
+        </div>
+      </div>
+    </li>
+  </ul>
+    <!-- <div>
+      <span class="deleteNote"><img src="img/delete.png" alt="Delete-Note Icon" title="Delete"></span>
+    </div> -->
+</article>

@@ -1,0 +1,17 @@
+<header>
+  <nav>
+    <div class="logoMenu">
+      <span class="dropdown"><img src="img/menu.png"></span>
+      <span class="logo">Todo</span>
+      <select style="display:none">
+        <option>User</option>
+        <option>Settings</option>
+        <option>Logout</option>
+      </select>
+    </div>
+    <div class="search">
+      <input class="searchBar" type="search" placeholder="Search" ng-show="main.searchMode">
+      <img src="img/search.png" class="searchIcon clickable" ng-model="query" ng-click="main.searchMode = !main.searchMode">      
+    </div>
+  </nav>
+</header>

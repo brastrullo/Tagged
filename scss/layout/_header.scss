@@ -1,0 +1,21 @@
+header {
+  border-bottom: 1px solid black;
+  max-height: 5.5em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: $bg-colour;
+  nav {
+    margin: 0 .5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.logoMenu {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,14 @@
+@media screen and (max-width: $br-sm) {
+  .checkout {
+    border-top: 1px solid darkgrey;
+    display: flex;
+    position: fixed;
+    align-self: center;
+    justify-content: center;
+    bottom: 0;
+    text-align: center;
+    background-color: orange;
+    width: 100%;
+    left: center(100%);
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="NoteApp | A simple daily goal tracker. Shia is right.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoteApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="myApp" ng-controller="MainCtrl as main">
+
+  <div ng-include="'header.html'"></div>
+  <div ng-include="'notesList.html'"></div>
+
+  <div class="footer"><span>&#169;</span> 2015 Bradley Rastrullo</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="app.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>

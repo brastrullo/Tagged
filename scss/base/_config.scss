@@ -1,0 +1,28 @@
+//FUNCTIONS
+
+//center with left positioning
+@function center($width) {
+  @return calc(50% - (#{$width} / 2));
+}
+
+//VARIABLES
+
+//Formatting
+
+
+//Colours
+$bg-colour: white;
+
+//Media Queries
+$br-sm: 400px;
+$br-md: 600px;
+$br-lg: 1000px;
+$br-xl: 1500px;
+
+//Product List
+$prod-img-sz : 7em;
+$prod-spacing: .5;
+
+//Fonts
+$font-default: 'Lato', sans-serif;
+$font-logo: 'Lobster', sans-serif;

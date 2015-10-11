@@ -1,0 +1,66 @@
+.addNote {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#noteInput {
+  background: transparent;
+  height: 1.5em;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: .5em;
+}
+
+#newNoteSubmit {
+  margin: .5em;
+}
+
+.note {
+  display: flex;
+  flex-flow: row no-wrap;
+  background-color: rgba(0,0,0,.2);
+  color: black;
+  border-radius: 5px;
+  margin: .5em;
+  padding: .5em;
+}
+
+.noteTitle {
+  font-size: 1.1em;
+}
+
+.noteContent {
+  margin: 0;
+}
+
+.editMode {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+  width: 80%;
+  div {
+    width: 50%;
+    margin: .5em;
+  }
+  input {
+    width: 100%;
+    background: transparent;
+    border: 1px dotted black;
+    border-radius: 5px;
+  }
+}
+
+.deleteMenu {
+  display: flex;
+  justify-content: flex-start;
+  width: 3em;
+}
